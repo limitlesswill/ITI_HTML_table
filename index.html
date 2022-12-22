@@ -6,22 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Hello World</title>
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <title>HTTP REQUESTS</title>
 </head>
 
 <body>
-  <form>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-      </tr>
-      <tr>
-        <td>Will</td>
-        <td>Unknown</td>
-      </tr>
-    </table>
+
+  <form action="https://www.google.com/search">
+    <fieldset>
+      <legend>Look-up</legend>
+      <input type="text" name="q">
+      <button value="Submit">Submit</button>
+    </fieldset>
   </form>
+
+  <hr>
+
+  <form>
+    <fieldset>
+      <legend>Look-up</legend>
+      <input type="text" name="q">
+      <a href="https://www.google.com/search">
+        <input type="button" name="q" value="Submit">
+      </a>
+    </fieldset>
+  </form>
+
+
 
 </body>
 
