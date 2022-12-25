@@ -14,6 +14,7 @@
 
 <body>
 
+  
   <form onsubmit="doit()">
     <fieldset>
       <legend>Look it up</legend>
@@ -21,6 +22,8 @@
       <input type="submit" value="Search">
     </fieldset>
   </form>
+  
+  <input type="text" id="look" onkeyup="look()" placeholder="Search for names">
 
   <table id="table">
     <thead>
