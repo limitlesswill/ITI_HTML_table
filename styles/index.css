@@ -44,6 +44,9 @@ form input[type=submit] {
 }
 
 #look{
+ background-image: url('/images/searchicon.png');
+ background-position: 0.2vw 0.7vh;
+ background-repeat: no-repeat;
  display: block;
  margin: 0 auto;
  margin-top:3vh;
@@ -60,14 +63,14 @@ form input[type=submit] {
  border: 3px solid red;
 }
 
-table {
+#table {
  width: 70vw;
  margin: 0 auto;
  margin-top: 3vh;
  border-collapse: collapse;
 }
 
-table, th, td {
+#table, th, td {
  border-spacing: 0px;
  border: 1px solid black;
 }
@@ -79,4 +82,8 @@ table, th, td {
 
 .ar{
  direction: rtl;
+}
+
+#table tr:hover {
+ background-color: #f1f1f1;
 }
