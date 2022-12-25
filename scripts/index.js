@@ -13,7 +13,7 @@ function lolup() {
  
  var input, filter, table, tr, td, i, txtValue;
  input = document.getElementById("look");
- filter = input.value.toUpperCase();
+ filter = input.value.toLowerCase();
  table = document.getElementById("table");
  tr = table.getElementsByTagName("tr");
 
@@ -21,7 +21,7 @@ function lolup() {
   td = tr[i].getElementsByTagName("td")[0];
   if (td) {
    txtValue = td.textContent || td.innerText;
-   if (txtValue.toUpperCase().indexOf(filter) > -1) {
+   if (txtValue.toLowerCase().indexOf(filter) > -1) {
     tr[i].style.display = "";
    } else {
     tr[i].style.display = "none";
