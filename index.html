@@ -7,29 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./styles/index.css">
+  <script src="./scripts/index.js"></script>
 
-  <title>HTTP REQUESTS</title>
+  <title>LOL @ YOU</title>
 </head>
 
 <body>
 
-  <form action="https://www.google.com/search">
+  <form onsubmit="doit()">
     <fieldset>
-      <legend>Look-up</legend>
-      <input type="text" name="q">
-      <button value="Submit">Submit</button>
-    </fieldset>
-  </form>
-
-  <hr>
-
-  <form>
-    <fieldset>
-      <legend>Look-up</legend>
-      <input type="text" name="q">
-      <a href="https://www.google.com/search">
-        <input type="button" name="q" value="Submit">
-      </a>
+      <legend>Look it up</legend>
+      <input id="q" type="text" name="q" placeholder="google" value="" autofocus>
+      <input type="submit" value="Search">
     </fieldset>
   </form>
 
