@@ -47,17 +47,18 @@ table {
  width: 70vw;
  margin: 0 auto;
  margin-top: 3vh;
- border-spacing: 5px;
- border: 2px solid black;
 }
 
-th {
+table, th, td {
+ border-spacing: 0px;
+ border: 1px solid black;
+}
+
+.gen {
  font-size: 3vh;
- border-right: 2px solid black;
  font-weight: bold;
 }
-td{
- font-size: 3vh;
- font-weight: bold;
- direction: rtl; 
+
+.ar{
+ direction: rtl;
 }
