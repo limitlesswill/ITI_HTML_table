@@ -35,4 +35,10 @@ function lolup() {
 
   }
 
+function hi(){
+  alert("wwwwp");
+}
+
+  
+  
 }

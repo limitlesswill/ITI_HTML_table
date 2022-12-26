@@ -43,6 +43,14 @@ form input[type=submit] {
  margin-top: 10px;
 }
 
+form input[type=submit]:active {
+ color: black;
+ background-color: red;
+ border-color: white;
+ font-weight: bold;
+ margin-top: 10px;
+}
+
 #look {
  background-image: url('/images/searchicon.png');
  background-position: 0.2vw 0.7vh;
