@@ -107,3 +107,7 @@ th {
  background-color: inherit;
 }
 
+table .info{
+ height: 10vh;
+}
+

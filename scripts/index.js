@@ -38,18 +38,37 @@ function lolup() {
 
 
 window.onload = function () {
+
+  /*a hellfire way to do it O_O
   let table = document.getElementById("table");
   let tr = table.getElementsByTagName("tr");
 
   for (let x = 1; x < tr.length; x++) {
-    tr[x].onmousedown = function (x) {
-      alert(this.rowIndex);
-      let newrow = table.insertRow(this.rowIndex + 1);
-      newrow.innerHTML = "<td colspan='2' style='text-align:center;font-weight:bold;'>YOYO</td>";
+  tr[x].onmousedown = function (x) {
+  alert(this.rowIndex);
+  let newrow = table.insertRow(this.rowIndex + 1);
+  newrow.innerHTML = "<td colspan='2' style='text-align:center;font-weight:bold;'>YOYO</td>";
+    }}*/
+
+  let details = document.getElementsByClassName("panel");
+  for (let x = 0; x < details.length; x++) {
+    details[x].onclick = function () {
+      let content = this.nextElementSibling;
+      if (content.style.display == "")
+        content.style.display = "none";
+      else
+        content.style.display = "";
+
     }
-
-
   }
+
+  let info = document.getElementsByClassName("info");
+  for (let x = 0; x < info.length; x++) {
+    info[x].style.display = "none";
+  }
+
 }
+
+
 
 
