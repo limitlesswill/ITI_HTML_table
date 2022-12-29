@@ -1,10 +1,10 @@
 body {
  background-color: rgb(223, 200, 139);
  background-image: url('/images/messi.jpg');
- background-size:contain;
+ background-size:cover;
  background-repeat: no-repeat;
  background-attachment: fixed;
- background-position:center;
+ background-position:center 5%;
 }
 
 form {
@@ -58,6 +58,7 @@ form input[type=submit]:active {
 
 #look {
  background-image: url('/images/searchicon.png');
+ background-color: rgba(255, 255, 255, 0.7);
  background-position: 0.2vw 0.7vh;
  background-repeat: no-repeat;
  background-position:left;
