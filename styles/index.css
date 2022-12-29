@@ -1,6 +1,7 @@
 body {
  background-color: rgb(223, 200, 139);
  background-image: url('/images/messi.jpg');
+ background-size:contain;
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-position:center;
