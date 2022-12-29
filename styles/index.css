@@ -60,6 +60,7 @@ form input[type=submit]:active {
  background-image: url('/images/searchicon.png');
  background-position: 0.2vw 0.7vh;
  background-repeat: no-repeat;
+ background-position:left;
  display: block;
  margin: 0 auto;
  margin-top: 3vh;
@@ -68,7 +69,7 @@ form input[type=submit]:active {
  height: 4vh;
  border: 3px solid black;
  font-weight: bold;
- font-size: 18px;
+ font-size: 2.7vh;
 }
 
 #look:focus {
