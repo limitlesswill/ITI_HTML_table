@@ -1,5 +1,8 @@
 body {
  background-color: rgb(223, 200, 139);
+ background-image: url('./images/messi.jpg');
+ background-repeat: no-repeat;
+ background-attachment: fixed; 
 }
 
 form {
