@@ -17,11 +17,11 @@ function lolup() {
   let tr = table.getElementsByTagName("tr");
 
   for (let i = 1; i < tr.length; i++) {
-    let td = tr[i].getElementsByTagName("td");
+    let trs = tr[i].getElementsByTagName("td");
     let match = false;
 
-    for (let x = 0; x < td.length; x++) {
-      if (td[x].textContent.toUpperCase().indexOf(filter) > -1) {
+    for (let td of trs) {
+      if (td.textContent.toUpperCase().indexOf(filter) > -1) {
         match = true;
         break;
       }
@@ -51,8 +51,8 @@ window.onload = function () {
     }}*/
 
   let details = document.getElementsByClassName("panel");
-  for (let x = 0; x < details.length; x++) {
-    details[x].onclick = function () {
+  for (let panel of details) {
+    panel.onclick = function () {
       let content = this.nextElementSibling;
       if (content.style.display == "")
         content.style.display = "none";
@@ -63,8 +63,8 @@ window.onload = function () {
   }
 
   let info = document.getElementsByClassName("info");
-  for (let x = 0; x < info.length; x++) {
-    info[x].style.display = "none";
+  for (let content of info) {
+    content.style.display = "none";
   }
 
 }
