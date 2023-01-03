@@ -29,7 +29,6 @@ legend {
 form input[type=text] {
  display: block;
  margin: 0 auto;
- margin-top: 1vh;
  width: 40vw;
  height: 3vh;
  border: 2px solid black;
