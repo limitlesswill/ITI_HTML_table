@@ -10,7 +10,7 @@ function doit() {
 };
 
 function lolup() {
-  let look = document.getElementById("look");
+  let look = document.getElementById("snames");
   let filter = look.value.toUpperCase();
 
   let table = document.getElementById("table");
@@ -51,14 +51,18 @@ window.onload = function () {
     }}*/
 
   let details = document.getElementsByClassName("panel");
+  let shown = false;
   for (let panel of details) {
     panel.onclick = function () {
       let content = this.nextElementSibling;
-      if (content.style.display == "")
-        content.style.display = "none";
-      else
-        content.style.display = "";
 
+      if (content.style.display == "none" && shown === false) {
+        content.style.display = "";
+        shown = true;
+      } else if (content.style.display == "" && shown === true) {
+        content.style.display = "none";
+        shown = false;
+      }
     }
   }
 

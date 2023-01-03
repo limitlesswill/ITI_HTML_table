@@ -1,15 +1,16 @@
 body {
  background-color: rgb(223, 200, 139);
  background-image: url('/images/messi.jpg');
- background-size:cover;
+ background-size: cover;
  background-repeat: no-repeat;
  background-attachment: fixed;
- background-position:center 5%;
+ background-position: center 5%;
 }
 
 form {
  width: 70vw;
  margin: 0 auto;
+ margin-top: 10vh;
 }
 
 fieldset {
@@ -56,12 +57,12 @@ form input[type=submit]:active {
  margin-top: 10px;
 }
 
-#look {
+#snames {
  background-image: url('/images/searchicon.png');
  background-color: rgba(255, 255, 255, 0.7);
  background-position: 0.2vw 0.7vh;
  background-repeat: no-repeat;
- background-position:left;
+ background-position: left;
  display: block;
  margin: 0 auto;
  margin-top: 3vh;
@@ -70,10 +71,10 @@ form input[type=submit]:active {
  height: 4vh;
  border: 3px solid black;
  font-weight: bold;
- font-size: 2.7vh;
+ font-size: 2.5vw;
 }
 
-#look:focus {
+#snames:focus {
  outline: 1px solid red;
  border: 3px solid red;
 }
@@ -86,7 +87,25 @@ form input[type=submit]:active {
  background-color: rgba(207, 79, 20, 0.2);
 }
 
-#table,th,td {
+#table tr:hover {
+ background-color: #f1f1f1;
+}
+
+#table thead tr:hover {
+ background-color: inherit;
+}
+
+table .panel {
+ cursor: pointer;
+}
+
+table .info {
+ height: 10vh;
+}
+
+#table,
+th,
+td {
  border-spacing: 0px;
  border: 1px solid black;
 }
@@ -106,16 +125,37 @@ th {
  direction: rtl;
 }
 
-#table tr:hover {
- background-color: #f1f1f1;
+
+#slogan {
+ border: 3px solid rgb(128, 106, 170);
+ color: white;
+ text-align: center;
+ font-weight: bold;
+ height: 55px;
+ width: 110px;
+ position: absolute;
+ left: 5vw;
+ animation-name: moveit;
+ animation-delay: 3s;
+ animation-duration: 10s;
+ animation-fill-mode: both;
+ /*From https://cubic-bezier.com*/
+ animation-timing-function: cubic-bezier(1, 0, 0.2, 1);
+ /* animation-iteration-count: infinite;
+ animation-direction: alternate-reverse; */
 }
 
-#table thead tr:hover {
- background-color: inherit;
+@keyframes moveit {
+ from {
+  transform: translateX(0vw) rotate(-40deg);
+ }
+
+ to {
+  transform: translateX(71vw) rotate(40deg);
+ }
+
+ 95% {
+  color: rgb(128, 106, 170);
+  border: 3px solid white;
+ }
 }
-
-table .info{
- height: 10vh;
-}
-
-
